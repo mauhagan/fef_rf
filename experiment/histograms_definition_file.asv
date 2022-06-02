@@ -1,0 +1,44 @@
+%
+% The histogram definition file defines support for the 
+% histogram panels on the Acquire GUI
+%
+%
+
+
+global experiment
+
+experiment.acquire.task(1).name = 'DelReachFixate';
+experiment.acquire.task(1).histograms(4).visible = 1;
+experiment.acquire.task(1).histograms(4).properties.major{1} = {'StartEye',1};
+experiment.acquire.task(1).histograms(4).properties.major{2} = {'StartHand',0};
+experiment.acquire.task(1).histograms(4).properties.minor{1} = {'Target',5};
+
+experiment.acquire.task(1).histograms(2).visible = 1;
+experiment.acquire.task(1).histograms(2).properties.major{1} = {'StartEye',1};
+experiment.acquire.task(1).histograms(2).properties.major{2} = {'StartHand',2};
+experiment.acquire.task(1).histograms(2).properties.minor{1} = {'Target',5};
+
+experiment.acquire.task(1).histograms(5).visible = 1;
+experiment.acquire.task(1).histograms(5).properties.major{1} = {'StartEye',2};
+experiment.acquire.task(1).histograms(5).properties.major{2} = {'StartHand',1};
+experiment.acquire.task(1).histograms(5).properties.minor{1} = {'Target',15};
+
+experiment.acquire.task(1).histograms(1).visible = 1;
+experiment.acquire.task(1).histograms(1).properties.major{1} = {'StartEye',2};
+experiment.acquire.task(1).histograms(1).properties.major{2} = {'StartHand',3};
+experiment.acquire.task(1).histograms(1).properties.minor{1} = {'Target',15};
+
+experiment.acquire.task(1).histograms(6).visible = 1;
+experiment.acquire.task(1).histograms(6).properties.major{1} = {'StartEye',3};
+experiment.acquire.task(1).histograms(6).properties.major{2} = {'StartHand',2};
+experiment.acquire.task(1).histograms(6).properties.minor{1} = {'Target',1};
+
+experiment.acquire.task(1).histograms(8).visible = 1;
+experiment.acquire.task(1).histograms(8).properties.major{1} = {'StartEye',3};
+experiment.acquire.task(1).histograms(8).properties.major{2} = {'StartHand',4};
+experiment.acquire.task(1).histograms(8).properties.minor{1} = {'Target',1};
+
+experiment.acquire.task(2).name = 'DelReachSaccade';
+experiment.acquire.task(2).histograms(1).visible = 1;
+experiment.acquire.task(1).histograms(1).properties.major{1} = {'Tarbe',0};
+experiment.acquire.task(1).histograms(1).properties.minor{1} = {'Target',5};
